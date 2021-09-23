@@ -11,7 +11,7 @@ body {
 	margin: 0;
 	background: #eee;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 }
 
 #map {
@@ -20,4 +20,15 @@ body {
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 1rem;
 	overflow: hidden;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	justify-items: stretch;
+	gap: 0.5rem;
+	border: 1px solid #ddd;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	max-width: 50vw;
 }
