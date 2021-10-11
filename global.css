@@ -9,14 +9,17 @@
 body {
 	padding: 0;
 	margin: 0;
+	max-height: 100vh;
 	background: #eee;
 	display: flex;
 	flex-direction: column-reverse;
 }
 
 #map {
+	--height: calc(100vh - 4rem) !important;
 	width: 100vw;
-	height: calc(100vh - 4rem);
+	height: var(--height);
+	max-height: var(--height);
 	border-top-left-radius: 1rem;
 	border-top-right-radius: 1rem;
 	overflow: hidden;
